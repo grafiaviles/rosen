@@ -1,0 +1,234 @@
+/*Cover Landing*/
+.cover-paralax {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    & .concepto-rosen {
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        z-index: 100;
+        color: white;
+        & .logotipo-center {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+        & h1.main-title {
+            width: 100%;
+            font-size: 3rem;
+            font-weight: lighter;
+            padding: 0 25px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            letter-spacing: -2px;
+            text-shadow: 0 0px 10px rgba(0,0,0, 0.2);
+            }
+            & h2.sub-title {
+                @extend .main-title;
+                font-size: 1rem;
+                letter-spacing: 2px;
+                margin: 0;
+                text-transform: uppercase;
+                text-shadow: 0 0px 10px rgba(0,0,0, 0.2);
+            }
+            & .btn-cover {
+                border: 1px solid white;
+                color: white;
+                line-height: 50px;
+                display: block;
+                width: 100%;
+                max-width: 200px;
+                height: 50px;
+                font-size: .9rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin: auto 0;
+            }
+            & .btn-cover:hover, & .btn-cover:active {
+                box-shadow: 200px 0 0 rgba(255, 255, 255, 0.2) inset;
+            }
+        }
+        & .bolders {
+            font-weight: bold;
+    }
+    & .mundos {
+        height: 100vh;
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        & .link-mundo {
+            position: relative;
+            transition: all 1s;
+            width: 100%;
+            height: 100vh;
+            padding: 0 1rem;
+            color: black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            & .icon-title {
+                font-size: 4rem;
+                transition: $transition1;
+                color: white;
+                display: block;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+            }
+            & h4 {
+                font-size: 2rem;
+                font-weight: bold;
+                letter-spacing: -2px;
+                margin-bottom: 0;
+                color: white;
+            }
+            & p {
+                width: 50%;
+                margin: 15px 0;
+                color: white;
+            }
+            & .btn-cover {
+                border: 1px solid white;
+                color: white;
+                line-height: 50px;
+                display: block;
+                width: 100%;
+                max-width: 200px;
+                height: 50px;
+                font-size: .9rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                
+            }
+            & .btn-cover:hover, & .btn-cover:active {
+                box-shadow: 200px 0 0 rgba(255, 255, 255, 0.2) inset;
+            }
+        }
+        & a.arrow-down {
+            width: 50px;
+            line-height: 50px;
+            height: 50px;
+            position: absolute;
+            display: block;
+            z-index: 10;
+            left: 50%;
+            margin-left: -25px;
+            font-size: 1.5rem;
+            color: white;
+            text-align: center;
+            bottom: 4%;
+            border-radius: 50%;
+        }
+    }
+    & .mundos:hover .icon-title {
+        transform: rotateY(180deg);
+    }
+    & .mundos-1 {
+        background-image: url(../img/rosen/bg-1.jpg);
+    }
+    // Custom elementos mundo 2
+    & .mundos-2 {
+        background-image: url(../img/rosen/bg-2.jpg);
+        & .link-mundo .icon-title, & .link-mundo p, & .link-mundo h4, & .link-mundo .btn-cover {
+            color: black;
+        }
+        & .link-mundo .btn-cover {
+            border: 1px solid black;
+        }
+        & .link-mundo .btn-cover:hover, & .link-mundo .btn-cover:active {
+            box-shadow: 200px 0 0 rgba(0, 0, 0, 0.1) inset;
+        }
+    }
+    & .mundos-1 .link-mundo:nth-child(1) {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    & .mundos-1:hover .link-mundo {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    & .mundos-2 .link-mundo:nth-child(1) {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    & .mundos-2:hover .link-mundo {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    
+}
+
+// Responsive Design
+@media screen and (max-width:480px) {
+    .cover-paralax {
+        height: 100%;
+        flex-direction: column;
+        & .concepto-rosen {
+            position: relative;
+            min-height: 100vh;
+            background-image: url(../img/rosen/bg-mobile.jpg);
+            background-position: center;
+            background-size: cover;
+            top: 0;
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            padding-bottom: 100px;
+            & h1.main-title {
+                font-size: 2.5rem;
+                text-shadow:none;
+            }
+            & h2.sub-title {
+                line-height: 25px;
+                letter-spacing: 2px;
+                width: 90%;
+                font-size: 1rem;
+                margin: 0;
+                margin-bottom: 20px;
+                text-shadow:none;
+            }
+            & .btn-cover {
+                border: 1px solid black;
+                color: black;
+                line-height: 50px;
+                display: block;
+                max-width: 80%;
+                height: 50px;
+                font-size: .9rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin: 0;
+                & i {
+                    vertical-align: middle;
+                    padding-right: 1rem;
+                    font-size: 1.5rem;
+                }
+                
+            }
+            & .btn-cover:last-child {
+                border-top: none;
+                //background-color: rgba(0, 0, 0, 0.1);
+            }
+            & .btn-cover:hover {
+                box-shadow: 500px 0 0 rgba(0, 0, 0, 0.2) inset;
+            }
+        }
+        & .mundos {
+            width: 100%;
+            & .link-mundo p {
+                width: 80%;
+            }
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+header {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+/*Menu Categoria Sitio Lapolar*/
+.menu-category-site {
+    background-color: $blackPolar;
+    line-height: 40px;
+    height: 40px;
+	padding: 0 6px;
+    box-shadow: none;
+    & a.button-collapse i {
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.5rem;
+    }
+    & .logo-category-main {
+        position: relative;
+        & img {
+            width: 110px;
+            padding-left: 20px;
+            @media screen and (max-width:480px){
+                padding-right: 20px;
+                padding-left: 0;
+            } 
+
+        }
+    }
+    & .right a {
+        font-size: .8rem;
+        opacity: .7;
+        transition: all .4s;
+        font-weight: bold;
+    }
+    & .right a:hover {
+        background-color: $redPolar;
+        opacity: 1;
+    }
+}
+@media screen and (max-width:480px) {
+	& .menu-category-site {
+		padding: 0;
+	}
+	& .nav-wrapper-mobile {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+/*Menu Slide Out*/
+.side-nav .user-view {
+    display: flex;
+    justify-content: center;
+    background-color: $redPolar;
+}
+.side-nav .user-view-landing {
+    background-color: #ee1c25;
+}
+.side-nav .subheader {
+    color: #ccc;
+    font-size: .9rem;
+}
+/*Menu Categoria Landing*/
+.menu-category-landing {
+    box-shadow: none;
+    background-color: transparent;
+    position: relative;
+    top: 40px;
+    transition: all .4s ease;
+    opacity: 0;
+    visibility: hidden;
+    & .icon-nav-menu {
+        position: absolute;
+        left: 20px;
+        width: 100px;
+        height: 100px;
+        top: -5px;
+        visibility: visible;
+        opacity: 1;
+        background-color: transparent;
+        & img {
+            transition: all .4s ease;
+            width: 100px;
+            top: 0;
+            position: relative;
+        }
+    }
+    & .text-concept {
+        color: black;
+        margin-left: 130px;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    & .brand-logo {
+        font-size: 2.7rem;
+    }
+    & .brand-logo-red {
+        opacity: 0;
+        visibility: hidden;
+    }
+    & .brand-logo-white {
+        opacity: 1;
+        visibility: visible;
+    }
+    & .logo-menu {
+        width: 125px;
+        padding-left: 20px;
+    }
+	@media screen and (max-width:480px) {
+		& .logo-menu {
+			padding-left: 10px;
+			width: 110px;
+		}
+	}
+    & ul li a {
+        color: $blackPolar;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        & i {
+            padding-left: 10px;
+        }
+    }
+    & ul li:nth-of-type(1) a{
+        visibility: hidden;
+        opacity: 0;
+    }
+	& ul li a:hover {
+		background-color: rgba(0, 0, 0, 0.03);
+	}
+    & ul li:last-child a {
+        margin-right: 20px;
+    }
+    @media screen and (max-width:480px) {
+        & ul li:nth-of-type(1) a {
+            visibility: visible;
+            opacity: 1;
+        }
+        & ul li .btn-mundos-menu {
+            display: none;
+        }
+        & .text-concept {
+            display: none;
+        }
+    }
+}
+.menu-fixed {
+    top: 0;
+    box-shadow: 0 10px 20px -20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    opacity: 1;
+    visibility: visible;
+    & ul li a {
+        color: $blackPolar;
+    }
+    & .icon-nav-menu {
+        opacity: 1;
+        visibility: visible;
+        & img {
+            transform: scale(.90);
+        }
+    }
+}
+    @media screen and (max-width:768px) {
+        .menu-fixed .icon-nav-menu {
+            // visibility: hidden;
+            // opacity: 0;
+        }
+    }
+
+/*Slide Out Menu Landing*/
+.icon-menu-nino {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.slide-menu-landing .icon-slide-out {
+    color: black;
+    margin-right: 10px;
+}
+/*Botones Conversión y trafico*/
+.btn-floating {
+    background-color: $redPolar;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.4);
+}
+.btn-floating:hover, .btn-large:hover, .btn:hover {
+    background-color: $redPolar;
+}
+.btn-floating i {
+    font-size: 1.5rem;
+}
+
+
+
+/*OTROS*/
+
+/* Para Safari */
+::selection {
+background: $redPolar;
+color: white;
+}
+
+
+img {
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -moz-user-select:none;user-select:none;
+    -webkit-user-drag:none;
+    user-drag:none
+}
+
+
+
+
