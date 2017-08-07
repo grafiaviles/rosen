@@ -3,6 +3,7 @@
     position: relative;
     overflow: hidden;
     & .content-box {
+		margin-bottom: 0;
         position: relative;
         & .content-box-a {
             overflow: hidden;
@@ -15,7 +16,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            box-shadow: -3px 0 0 $whitePolar inset;
+            box-shadow: -3px -3px 0 $whitePolar inset;
             & .box-a {
                 background-color: transparent;
                 padding: .5rem 0;
@@ -69,6 +70,16 @@
                 
             }
         }
+		& .content-box-c {
+			background-image: url(../img/rosen/bg-2-fixed.jpg);
+			& .btn-img-2 {
+				border: 1px solid black !important;
+				padding-left: 3rem!important;
+				& img {
+					border-right: 1px solid black !important;	
+				}
+			}
+		}
         
         
         // Contenido Productos

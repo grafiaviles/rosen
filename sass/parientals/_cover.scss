@@ -29,8 +29,8 @@
             }
             & h2.sub-title {
                 @extend .main-title;
-                font-size: 1rem;
-                letter-spacing: 2px;
+                font-size: .8rem;
+                letter-spacing: 1px;
                 margin: 0;
                 text-transform: uppercase;
                 text-shadow: 0 0px 10px rgba(0,0,0, 0.2);
@@ -74,6 +74,7 @@
             align-items: center;
             display: flex;
             flex-direction: column;
+			padding-top: 5rem;
             & .icon-title {
                 font-size: 4rem;
                 transition: $transition1;
@@ -99,7 +100,7 @@
             }
             & p {
                 width: 50%;
-                margin: 15px 0;
+                margin: 10px 0;
                 color: white;
             }
             & .btn-cover {
@@ -235,6 +236,9 @@
         }
         & .mundos {
             width: 100%;
+			& .link-mundo {
+				padding-top: 0;
+			}
             & .link-mundo p {
                 width: 80%;
             }
