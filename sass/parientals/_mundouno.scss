@@ -190,6 +190,16 @@
             & .product-des:nth-child(even){
                 background-image: url(../img/rosen/producto-uno/destacado-2.jpg);
             }
+            & .product-des:nth-child(1){
+                background-image: url(/img/rosen/producto-uno/extremo/19638928.jpg);
+            }
+            & .product-des:nth-child(2){
+                background-image: url(/img/rosen/producto-uno/extremo/19638936.jpg);
+            }
+            & .product-des:nth-child(3){
+                background-image: url(/img/rosen/producto-uno/extremo/19622436.png);
+                background-position: left center;
+            }
         }        
     }
     & .nav-icon-fixed {
